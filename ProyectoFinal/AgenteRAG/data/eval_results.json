@@ -1,0 +1,199 @@
+{
+  "summary": {
+    "hit_at_k": 1.0,
+    "file_precision": 0.6233333333333333,
+    "keyword_recall": 0.7333333333333334,
+    "faithfulness": 0.4
+  },
+  "details": [
+    {
+      "question": "¿Cuál es el nombre del sitio web que cayó?",
+      "answer": "El sitio web que cayó es VentadePatos.com [ReporteIncidentes.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.6666666666666666,
+      "keyword_recall": 1.0,
+      "faithful": true,
+      "judge_reason": "La respuesta está directamente respaldada en el contexto del primer fragmento del archivo ReporteIncidente.pdf."
+    },
+    {
+      "question": "¿Cuántos usuarios fueron afectados por el incidente?",
+      "answer": "120 usuarios fueron afectados por el incidente [ReporteIncidentes.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf",
+        "EmailPersonal.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.5,
+      "keyword_recall": 1.0,
+      "faithful": true,
+      "judge_reason": "La respuesta está correctamente basada en el contexto proporcionado, citando específicamente el número de usuarios afectados."
+    },
+    {
+      "question": "¿Cuál fue la pérdida económica del incidente?",
+      "answer": "La pérdida económica estimada para el incidente fue de $100,000 [ReporteIncidentes.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "ReporteIncidentes.pdf",
+        "DiarioDeGerente.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.6666666666666666,
+      "keyword_recall": 0.3333333333333333,
+      "faithful": false,
+      "judge_reason": "La respuesta no está sustentada en ninguno de los fragmentos proporcionados. El contexto solo menciona una pérdida estimada de $100,000 en el documento AcciónDePersonal.pdf, pero no especifica que esta sea la pérdida económica total del incidente."
+    },
+    {
+      "question": "¿Quién era el encargado del monitoreo?",
+      "answer": "El encargado del monitoreo en el turno asignado a Juanito Montero era él mismo. Según el fragmento 2, se menciona que Juanito Montero estaba en el puesto de Encargado de Monitoreo de Servicios Web [AccionDePersonal.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "ReporteIncidentes.pdf",
+        "AccionDePersonal.pdf",
+        "PlanMejoras.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.6666666666666666,
+      "keyword_recall": 1.0,
+      "faithful": false,
+      "judge_reason": "La respuesta no está sustentada por ningún fragmento del contexto proporcionado."
+    },
+    {
+      "question": "¿Quién escribió la acción de personal?",
+      "answer": "Carlos Gómez escribió la acción de personal. [AccionDePersonal.pdf]",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "DiarioDeGerente.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 1.0,
+      "keyword_recall": 1.0,
+      "faithful": false,
+      "judge_reason": "La respuesta omite información crucial y no refleja el contenido completo del contexto."
+    },
+    {
+      "question": "¿Quién firma el diario de gerente?",
+      "answer": "Sebastián Rivera firma el diario de gerente. [DiarioDeGerente.pdf]",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "DiarioDeGerente.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.5,
+      "keyword_recall": 1.0,
+      "faithful": false,
+      "judge_reason": "La respuesta no menciona la acción de personal ni los detalles relevantes del contexto."
+    },
+    {
+      "question": "¿Cuál fue la causa raíz del incidente?",
+      "answer": "La falta de supervisión adecuada por parte de Juanito Montero, el encargado del monitoreo, durante su turno nocturno fue la causa raíz del incidente. No activó su sistema de alarmas a tiempo para realizar el monitoreo, lo que le impidió detectar y actuar frente al alto consumo de memoria RAM en los servidores durante tres picos críticos [FRAGMENTO 2].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "ReporteIncidentes.pdf",
+        "DiarioDeGerente.pdf",
+        "AccionDePersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.6666666666666666,
+      "keyword_recall": 0.5,
+      "faithful": true,
+      "judge_reason": "La respuesta refleja correctamente la información proporcionada en el contexto sobre las fallas de Juanito Montero y su impacto en el incidente."
+    },
+    {
+      "question": "¿Qué archivo describe las sanciones?",
+      "answer": "El archivo AccionDePersonal.pdf describe las sanciones [AccionDePersonal.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "AccionDePersonal.pdf",
+        "PlanMejoras.pdf"
+      ],
+      "expected_files": [
+        "AccionDePersonal.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.5,
+      "keyword_recall": 1.0,
+      "faithful": false,
+      "judge_reason": "La respuesta omite información crucial y no menciona las medidas específicas detalladas en el contexto."
+    },
+    {
+      "question": "¿Qué sitio se propuso como respaldo?",
+      "answer": "Se propuso VentadeGansos.com como página de contingencia para ser la página de respaldo [ReporteIncidentes.pdf].",
+      "intent": "CONTENT_QA",
+      "retrieved_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf",
+        "PlanMejoras.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "PlanMejoras.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.6666666666666666,
+      "keyword_recall": 0.0,
+      "faithful": false,
+      "judge_reason": "La respuesta omite el contexto completo y solo menciona una parte parcial del fragmento."
+    },
+    {
+      "question": "¿En qué fecha ocurrió el incidente?",
+      "answer": "Orden cronológico de los documentos:\n2025-04-06  →  ReporteIncidentes.pdf (reporte_incidente)\n2025-04-07  →  AccionDePersonal.pdf (accion_personal)\n2025-04-07  →  DiarioDeGerente.pdf (diario_gerente)\n2025-04-08  →  PlanMejoras.pdf (plan_mejoras)\nsin fecha  →  EmailPersonal.pdf (email)",
+      "intent": "CHRONOLOGY",
+      "retrieved_files": [
+        "ReporteIncidentes.pdf",
+        "AccionDePersonal.pdf",
+        "DiarioDeGerente.pdf",
+        "PlanMejoras.pdf",
+        "EmailPersonal.pdf"
+      ],
+      "expected_files": [
+        "DiarioDeGerente.pdf",
+        "ReporteIncidentes.pdf"
+      ],
+      "hit_at_k": 1,
+      "file_precision": 0.4,
+      "keyword_recall": 0.5,
+      "faithful": true,
+      "judge_reason": null
+    }
+  ]
+}

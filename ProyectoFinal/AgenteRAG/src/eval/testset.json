@@ -1,0 +1,52 @@
+[
+  {
+    "question": "¿Cuál es el nombre del sitio web que cayó?",
+    "expected_keywords": ["VentadePatos.com"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf"]
+  },
+  {
+    "question": "¿Cuántos usuarios fueron afectados por el incidente?",
+    "expected_keywords": ["120"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf"]
+  },
+  {
+    "question": "¿Cuál fue la pérdida económica del incidente?",
+    "expected_keywords": ["100K", "100,000", "100.000"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf"]
+  },
+  {
+    "question": "¿Quién era el encargado del monitoreo?",
+    "expected_keywords": ["Juanito", "Montero"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf", "AccionDePersonal.pdf"]
+  },
+  {
+    "question": "¿Quién escribió la acción de personal?",
+    "expected_keywords": ["Carlos", "Gómez"],
+    "expected_files": ["DiarioDeGerente.pdf", "AccionDePersonal.pdf"]
+  },
+  {
+    "question": "¿Quién firma el diario de gerente?",
+    "expected_keywords": ["Sebastián", "Rivera"],
+    "expected_files": ["DiarioDeGerente.pdf"]
+  },
+  {
+    "question": "¿Cuál fue la causa raíz del incidente?",
+    "expected_keywords": ["negligencia", "dormido", "alarma", "monitoreo"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf"]
+  },
+  {
+    "question": "¿Qué archivo describe las sanciones?",
+    "expected_keywords": ["AccionDePersonal"],
+    "expected_files": ["AccionDePersonal.pdf"]
+  },
+  {
+    "question": "¿Qué sitio se propuso como respaldo?",
+    "expected_keywords": ["VentadeGanzos.com"],
+    "expected_files": ["DiarioDeGerente.pdf", "PlanMejoras.pdf"]
+  },
+  {
+    "question": "¿En qué fecha ocurrió el incidente?",
+    "expected_keywords": ["abril", "2025"],
+    "expected_files": ["DiarioDeGerente.pdf", "ReporteIncidentes.pdf"]
+  }
+]
