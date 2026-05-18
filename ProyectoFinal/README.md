@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Resumen ejecutivo (≤250 palabras)
+## 1. Resumen ejecutivo
 
 Implementamos un **agente RAG local** que responde en español preguntas sobre un corpus de cinco PDFs internos de una empresa. La arquitectura combina **búsqueda no informada (BM25)** y **búsqueda informada (similitud coseno sobre embeddings densos)** mediante **Reciprocal Rank Fusion (RRF)**, alimentando un **LLM local (`qwen2.5:7b-instruct` vía Ollama)** que genera respuestas ancladas estrictamente en el contexto recuperado.
 
